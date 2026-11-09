@@ -21,3 +21,6 @@ credentials*
 *.pem
 *.key
 data/raw/
+
+# 自动推送日志
+.autopush.log
