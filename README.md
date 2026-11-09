@@ -41,3 +41,8 @@ notes/  每周复盘笔记
 ## 注意
 
 本仓库只放练习代码。**不上传任何客户数据、公司代码、内部文档或凭证。**
+
+## 自动推送
+
+每天 23:30 由 Windows 计划任务 Python12W-AutoPush 执行 `autopush.ps1`：
+自动 `git add` → `commit` → `push`，日志见 `.autopush.log`。「计划任务」里可手动运行。
