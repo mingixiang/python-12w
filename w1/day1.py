@@ -1,24 +1,29 @@
 
 #定义 5 个变量，分别存整数、小数、字符串、布尔、列表，用 type() 打印类型
-A = int
-B = float
-C = bool
-E = list[0,1,2,3,4]
-print(type(A), type(B), type(C), type(E))
+A = 4
+B = 3.14
+C = False
+D = "Hello"
+E = [0,1,2,3,4]
+print(type(A), type(B), type(C),type(D), type(E))
 
 
 #用 f-string 输出一行自我介绍（姓名 / 年龄 / 城市），要求冒号对齐、宽度 10
-print(f'姓名:{"Ming":<12}' )
-print(f'年龄:{"26":<12}')
-print(f'城市:{"HangZhou":<12}')
+print(f'姓名:{"Ming":<10}' )
+print(f'年龄:{"26":<10}')
+print(f'城市:{"HangZhou":<10}')
+
+
 #输入两个数，输出和、差、积、商，结果保留 2 位小数
-a = input()
-b = input()
-A = float(a) + float(b)
-B = float(a) - float(b)
-C = float(a) * float(b)
-D = float(a) / float(b)
-print(f'和: {A:.2f} \n差: {B:.2f} \n积: {C:.2f} \n商: {D:.2f}')
+a = float(input())
+b = float(input())
+print(f'和: {a + b:.2f}')
+print(f'差: {a - b:.2f}')
+if b == 0:
+    print("商不能为0")
+else:
+    print(f'商: {a / b:.2f}')
+print(f'积: {a * b:.2f}')
 
 #摄氏转华氏，输出格式如 25.0C = 77.0F
 tempure_a = input()
